@@ -6,15 +6,18 @@
     <meta name="viewport" content="width = 320" />
     <meta name="viewport" content="initial-scale=2.3,user-scalable=yes" />
     <meta name="viewport" content="width=480; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
-    <title>いつ来る!? / itsuku.ru</title>
+    <title><rt:block name="page_title">いつ来る!?</rt:block> / itsuku.ru</title>
+    <m:not_mobile>
     <style type="text/css" media="screen">
         body {
             font-family: sans-serif;
         }
     </style>
+    </m:not_mobile>
 </head>
 <body>
     <div style="text-align:center">
+    <rt:block name="main">
         <div style="width:240px;margin:0 auto;">
             <center><img src="i/logo.gif" alt="いつ来る!?" width="220" height="57" /></center>
             <!-- <p align="left">駅を入力した後の画面をブックマークしておけば、次からはブックマークを開いた時間の乗り換え案内ページに飛びます！</p> -->
@@ -31,6 +34,7 @@
             <hr width="100%" />
             <font size="2"><center>powered by <a href="http://wozozo.jp">wozozo</a> with <a href="http://nequal.jp">nequal</a></center></font>
         </div>
+    </rt:block>
     </div>
 </body>
 </html>
