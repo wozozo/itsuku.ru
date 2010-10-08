@@ -1,0 +1,5 @@
+.htaccess
+__settings__.php
+core/
+vendors/
+work/

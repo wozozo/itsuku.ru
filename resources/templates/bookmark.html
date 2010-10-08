@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="description" content="ワンクリックで乗り換え検索！いつ来る!?"> 
+    <meta name="keywords" content="検索,乗換,乗り換え,路線,いつ来る,いつくる,itsukuru,itukuru,itsuku.ru,ituku.ru">
+    <title>
+        {$saddr} {$daddr} / itsuku.ru
+    </title>
+    <style type="text/css" media="screen">
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align:center">
+        <div style="width:240px;margin:0 auto;">
+            <center><img src="i/logo.gif" alt="いつ来る!?" /></center>
+            <div align="left">
+                <p>このページをブックマークしてください。<br />次開いたときは乗り換え案内のページに飛びます。</p>
+        
+                <?php /* if (!$mobile->isDocomo()): ?>
+                    <p>QRコードを読み取ってからブックマークすることもできます。</p>
+                <?php endif; */ ?>
+        
+                <p><a href="/">別のブックマークを作る場合はここをクリックしてトップに戻ってください</a></p>
+            </div>
+            <?php /*
+                $api = 'http://chart.apis.google.com/chart?chs=230x230&cht=qr&chl=';
+                $saddr = urlencode(mb_convert_encoding($_GET['saddr'], 'shift_jis', 'utf-8, shift_jis'));
+                $daddr = urlencode(mb_convert_encoding($_GET['daddr'], 'shift_jis', 'utf-8, shift_jis'));
+                $params = sprintf('http://itsuku.ru/?saddr=%s&daddr=%s&submit&qr', $saddr, $daddr);
+                $params = urlencode($params);
+    
+                $qrcode = sprintf('%s%s', $api, $params);
+            ?>
+            <?php if (!$mobile->isDocomo()): ?>
+                <p><img src="<?php echo htmlspecialchars($qrcode, ENT_QUOTES, 'utf-8') ?>"></p>
+            <?php endif; */ ?>
+            <hr width="100%" />
+            <font size="2"><center>powered by <a href="http://wozozo.org">wozozo</a> with <a href="http://nequal.jp">nequal</a></center></font>
+        </div>
+    </div>
+</body>
+</html>

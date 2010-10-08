@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="ワンクリックで乗り換え検索！いつ来る!?"> 
+    <meta name="keywords" content="検索,乗換,乗り換え,路線,いつ来る,いつくる,itsukuru,itukuru,itsuku.ru,ituku.ru"> 
+    <meta name="viewport" content="width = 320" />
+    <meta name="viewport" content="initial-scale=2.3,user-scalable=yes" />
+    <meta name="viewport" content="width=480; initial-scale=0.6666; maximum-scale=1.0; minimum-scale=0.6666" />
+    <title>いつ来る!? / itsuku.ru</title>
+    <style type="text/css" media="screen">
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align:center">
+        <div style="width:240px;margin:0 auto;">
+            <center><img src="i/logo.gif" alt="いつ来る!?" width="220" height="57" /></center>
+            <!-- <p align="left">駅を入力した後の画面をブックマークしておけば、次からはブックマークを開いた時間の乗り換え案内ページに飛びます！</p> -->
+            <p align="left">駅を登録しておけばブックマークを開いた時間の乗り換え案内ページに飛びます！</p>
+            <div>
+                <form action="{$t.map_url('bookmark')}" method="get" rt:ref="true">
+                    <p>出発<input type="text" name="saddr"　maxlength="255" size="15" /></p>
+                    <p>到着<input type="text" name="daddr"　maxlength="255" size="15" /></p>
+                    <p><input type="submit" name="submit" value="いつ来る!?" /></p>
+                </form>
+            </div>
+            <p align="left"><font size="1">※ボタンを押すと乗り換え案内ページに飛んでしまう場合は、このページを再読み込みしてください。</font></p>
+            <p><center><img src="i/qr.gif" /></center></p>
+            <hr width="100%" />
+            <font size="2"><center>powered by <a href="http://wozozo.jp">wozozo</a> with <a href="http://nequal.jp">nequal</a></center></font>
+        </div>
+    </div>
+</body>
+</html>
