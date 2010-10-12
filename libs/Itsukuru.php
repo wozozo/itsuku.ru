@@ -11,6 +11,9 @@ class Itsukuru extends Flow
      * インデックスページ
      **/
     public function index() {
+        if ($this->in_vars('saddr') && $this->in_vars('daddr')) {
+            $this->redirect_by_map('bookmark', $this->ar_vars());
+        }
         $this->sessions('from_index', true);
     }
 
